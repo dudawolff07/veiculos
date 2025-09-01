@@ -1,0 +1,162 @@
+/* css/style.css - Tema escuro com Bootstrap */
+
+:root {
+    --bs-body-bg: #121212;
+    --bs-body-color: #e6e6e6;
+}
+
+body {
+    background-color: #121212;
+    color: #e6e6e6;
+    padding-bottom: 20px;
+}
+
+.main-content {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Tabelas personalizadas */
+.table-custom {
+    background-color: #2d2d2d;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table-custom th {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: none;
+}
+
+.table-custom td {
+    border-color: #404040;
+    vertical-align: middle;
+}
+
+.table-custom tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Cartões personalizados */
+.card-custom {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header-custom {
+    background-color: #3a3a3a;
+    border-bottom: 1px solid #404040;
+    color: #ffffff;
+}
+
+/* Formulários personalizados */
+.form-control, .form-select {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+    color: #e6e6e6;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #2d2d2d;
+    border-color: #4a8eff;
+    color: #e6e6e6;
+    box-shadow: 0 0 0 0.25rem rgba(74, 142, 255, 0.25);
+}
+
+.form-label {
+    color: #e6e6e6;
+    font-weight: 500;
+}
+
+/* Botões personalizados */
+.btn-primary {
+    background-color: #4a8eff;
+    border-color: #4a8eff;
+}
+
+.btn-primary:hover {
+    background-color: #3a7aed;
+    border-color: #3a7aed;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+/* Links de ação */
+.action-link {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin: 0 0.15rem;
+}
+
+.action-edit {
+    background-color: #4a8eff;
+    color: white !important;
+}
+
+.action-delete {
+    background-color: #e74c3c;
+    color: white !important;
+}
+
+.action-link:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Navbar personalizada */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0 0.25rem;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Login page */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .action-link {
+        text-align: center;
+        margin: 0.15rem 0;
+    }
+}
