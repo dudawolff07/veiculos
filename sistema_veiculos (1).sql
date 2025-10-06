@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Set-2025 às 02:14
+-- Tempo de geração: 06-Out-2025 às 13:27
 -- Versão do servidor: 10.4.32-MariaDB
 -- versão do PHP: 8.2.12
 
@@ -41,7 +41,7 @@ INSERT INTO `marcas` (`id`, `nome`) VALUES
 (2, 'Chevrolet'),
 (3, 'Volkswagen'),
 (4, 'Honda'),
-(5, 'Yamaha');
+(10, 'yamaha');
 
 -- --------------------------------------------------------
 
@@ -110,7 +110,7 @@ ALTER TABLE `veiculos`
 -- AUTO_INCREMENT de tabela `marcas`
 --
 ALTER TABLE `marcas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
@@ -122,7 +122,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `veiculos`
 --
 ALTER TABLE `veiculos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restrições para despejos de tabelas
